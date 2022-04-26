@@ -5,7 +5,7 @@ import {formElements} from '/scripts/htmlElements.js';
 export const elementsListeners = {
     addTabsMenuListeners() {
         // eslint-disable-next-line no-unused-vars
-        for (const [indexItem, ...rest] of state.tabMenu.tabs.entries()) {  
+        for (const [indexItem, ] of state.tabMenu.tabs.entries()) {  
             const tabItem = document.querySelector(`#tab-id-${indexItem}`);
             tabItem.addEventListener('click', (event) => {
                 event.preventDefault();
